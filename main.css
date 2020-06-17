@@ -1,0 +1,109 @@
+nav ul li{
+  display: block;
+  float: left;
+  width: auto;
+  height: auto;
+  padding: 10px 20px;
+  background-color: red;
+  color: wheat;
+}
+header {
+  background-color: powderblue;
+}
+
+h1 {
+  color: salmon;
+  font-family: fantasy;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+table {
+  border-style: none;
+  border-width: 1px;
+  border-color: #8ebf42;
+  background-color: #d9d9d9;
+}
+th {
+  border: 5px #095484;
+}
+td {
+  border: 20px groove #1c87c9;
+}
+
+p {
+  color: tomato;
+  font-family: monospace;
+  font-size: larger;
+  font-style: italic;
+  border: 1px solid powderblue;
+  padding: 10px;
+}
+.container {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  float: right;
+}
+.email {
+  display: inline-block;
+  margin-left: 20px;
+}
+.phone-number {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.phone {
+  width: 3%;
+  display: inline-block;
+  margin-left: 20px;
+}
+.divdisplay {
+  display: inline;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 25%;
+  height: 25%;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.myTweetsContainer {
+  display: flex;
+  justify-content: flex-end;
+  background-color: DodgerBlue;
+  float: right;
+}
