@@ -1,120 +1,110 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge=chrome" />
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge=chrome"/>
     <title>Mausam Adhikari</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  </head>
-  <body>
-    <header>
-      <br />
+</head>
+<body>
+<header>
+    <br/>
 
-      <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-dark bg-dark">
         <ul>
-          <li><a class="btn btn-outline-success" type="button">Home</a></li>
-          <li><a class="btn btn-outline-success" type="button">About me</a></li>
-          <li><a class="btn btn-outline-success" type="button">Projects</a></li>
-          <li><a class="btn btn-outline-success" type="button">Contact</a></li>
-          <li><a class="btn btn-outline-success blogs" type="button" href="https://blogs.mausamadhikari.com.np">Blogs</a></li>
-          <li>
-              <img
-                      src="https://i.ibb.co/ysSmJ0Q/email.png"
-                      class="phone"
-                      alt="email"
-                      border="0"
-              />
+            <li><a class="btn btn-outline-success" type="button">Home</a></li>
+            <li><a class="btn btn-outline-success" type="button">About me</a></li>
+            <li><a class="btn btn-outline-success" type="button">Projects</a></li>
+            <li><a class="btn btn-outline-success" type="button">Contact</a></li>
+            <li><a class="btn btn-outline-success blogs" type="button"
+                   href="https://blogs.mausamadhikari.com.np">Blogs</a></li>
+            <li>
+                <img
+                        src="https://i.ibb.co/ysSmJ0Q/email.png"
+                        class="phone"
+                        alt="email"
+                        border="0"
+                />
 
-              <a href="mailto:mausamadhikari20@gmail.com" class="email"
-              >mausamadhikari20@gmail.com</a>
-          </li>
-          <li>
-              <img
-                      src="https://i.ibb.co/QJWM91w/unnamed.png"
-                      alt="Phone"
-                      class="phone"
-              />
-              <a class="phone-number" href="tel:+9779840361144">+9779840361144</a>
-          </li>
+                <a href="mailto:mausamadhikari20@gmail.com" class="email"
+                >mausamadhikari20@gmail.com</a>
+            </li>
+            <li>
+                <img
+                        src="https://i.ibb.co/QJWM91w/unnamed.png"
+                        alt="Phone"
+                        class="phone"
+                />
+                <a class="phone-number" href="tel:+9779840361144">+9779840361144</a>
+            </li>
         </ul>
-      </nav>
-      <br/>
-      <figure>
-<!--        <div class="container">-->
-<!--          <img-->
-<!--            src="https://avatars2.githubusercontent.com/u/31593792?v=4"-->
-<!--            alt="Mausam"-->
-<!--            class="image"-->
-<!--          />-->
-<!--          <div class="middle">-->
-<!--            <div class="text">Mausam Adhikari</div>-->
-<!--          </div>-->
-<!--        </div>-->
-
+    </nav>
+    <figure>
         <img class="rounded rounded-sm float-right image"
-          src="https://avatars2.githubusercontent.com/u/31593792?v=4"
-          title="Mausam Adhikari"
-          alt="Photo of Mausam"
+             src="https://avatars2.githubusercontent.com/u/31593792?v=4"
+             title="Mausam Adhikari"
+             alt="Photo of Mausam"
         />
-      </figure>
-
-      <br />
-    </header>
-    <main>
-      <section>
+    </figure>
+</header>
+<main>
+    <section>
         <div class="container" id="myInfoContainer">
-          <h1 class="alert alert-info" id="userGeetingsInfo">Hi guys, I'm Mausam.</h1>
-          
-          <p class="alert alert-info" id="userBio">A guy who doesn't know HTML CSS.</p>
-          <hr/>
+            <h1 class="alert alert-info" id="userGeetingsInfo">Hi guys, I'm Mausam.</h1>
+
+            <p class="alert alert-info" id="userBio">A guy who doesn't know HTML CSS.</p>
+            <hr/>
         </div>
-      </section>
-    </main>
-    <div  class="table-responsive">
-      <table>
+    </section>
+</main>
+<div class="table-responsive">
+    <table>
         <thead>
-          <tr class="table-info ">
+        <tr class="table-info ">
             <th scope="col">ID</th>
             <th scope="col">Name</th>
             <th scope="col">URL</th>
 
             <!--<th scope="col">Language</th> -->
-          </tr>
+        </tr>
         </thead>
         <tbody id="repo_table">
-          <!-- 
-            
-            -->
+        <!--
+
+          -->
         </tbody>
-      </table>
-      <div id="repoNavigationButtonContainer">
+    </table>
+    <div id="repoNavigationButtonContainer">
         <!-- <button>1</button> -->
-      </div>
     </div>
-    <div class="myTweetsContainer">
-<a class="twitter-timeline" data-width="250" data-height="350" data-theme="dark" href="https://twitter.com/Mausamadhikari5?ref_src=twsrc%5Etfw">Tweets by Mausamadhikari5</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      
-    </div>
-    <footer>
-      <br />
-      <p class="w-50 p-3">&copy; 2020 - Mausam Adhikari - All rights reserved</p>
-      <div class="footerContainer">
+</div>
+<div class="myTweetsContainer">
+    <a class="twitter-timeline" data-width="250" data-height="350" data-theme="dark"
+       href="https://twitter.com/Mausamadhikari5?ref_src=twsrc%5Etfw">Tweets by Mausamadhikari5</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</div>
+<footer>
+    <br/>
+    <p class="w-50 p-3">&copy; 2020 - Mausam Adhikari - All rights reserved</p>
+    <div class="footerContainer">
         <p class="w-50 p-3">
-          Hosted On
-          <a
-            href="https://github.com/"
-            target="_blank"
-            rel="nofollow"
-            title="Open Github"
+            Hosted On
+            <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="nofollow"
+                    title="Open Github"
             >GitHub</a
-          >
-          with ❤️
+            >
+            with ❤️
         </p>
-      </div>
-    </footer>
-    <script src="index.js"></script>
-  </body>
+    </div>
+</footer>
+<script src="index.js"></script>
+</body>
 </html>

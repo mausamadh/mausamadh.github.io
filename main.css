@@ -1,5 +1,5 @@
 nav ul li{
-  display: block;
+  display: inline;
   float: left;
   width: auto;
   height: auto;
@@ -49,11 +49,11 @@ p {
   float: left;
 }
 .email {
-  display: inline-block;
+  display: inline;
   margin-left: 20px;
 }
 .phone-number {
-  display: inline-block;
+  display: inline;
   margin-left: 20px;
 }
 
@@ -102,7 +102,7 @@ p {
 
 .myTweetsContainer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   background-color: DodgerBlue;
   float: right;
 }
