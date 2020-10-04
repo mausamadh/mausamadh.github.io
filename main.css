@@ -4,7 +4,6 @@ nav ul li{
   width: auto;
   height: auto;
   padding: 10px 20px;
-  background-color: red;
   color: wheat;
 }
 header {
@@ -47,7 +46,7 @@ p {
   position: relative;
   width: 50%;
   height: 50%;
-  float: right;
+  float: left;
 }
 .email {
   display: inline-block;
@@ -70,8 +69,8 @@ p {
 .image {
   opacity: 1;
   display: block;
-  width: 25%;
-  height: 25%;
+  width: 10%;
+  height: 10%;
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
