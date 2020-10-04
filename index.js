@@ -3,7 +3,7 @@ let gitUserInfoUrl = "https://api.github.com/users/mausamadhikari";
 var userInfoResponse;
 var repoListResponse;
 
-var per_page = 2;
+var per_page = 4;
 function fetchDataFromURL(url) {
   //Create a request variable and assign a new XMLHttpRequest object to it.
   var request = new XMLHttpRequest();
