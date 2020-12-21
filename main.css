@@ -27,9 +27,10 @@ header {
   border: 1px solid #ddd;
   margin: 0 4px;
 }
-#contact{
+.contact{
   background: url(http://www.saar-hunsrueck-steig.de/cams/clients/shsteig/media/images_backgrounds_Bild_6.jpg);
   height: 350px;
+  width:100%;
 }
 
 
