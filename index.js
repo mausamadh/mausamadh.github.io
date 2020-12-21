@@ -3,6 +3,9 @@ let gitUserInfoUrl = "https://api.github.com/users/mausamadhikari";
 var userInfoResponse;
 var repoListResponse;
 
+
+
+
 var per_page = 4;
 function fetchDataFromURL(url) {
   //Create a request variable and assign a new XMLHttpRequest object to it.
@@ -85,7 +88,7 @@ function createButtonsForRepo() {
   if (userInfoResponse.public_repos % per_page !== 0) repoDivisor++;
 
   for (let i = 1; i <= repoDivisor; i++) {
-    let button = `<button class="repoNavigationButton" id="${i}" onClick="navRepoPageBtnClicked(${i})">${i}</button>`;
+    let button = `<button class="repoNavigationButton pagination item" id="${i}" onClick="navRepoPageBtnClicked(${i})">${i}</button>`;
     createdButtons = createdButtons.concat(button);
   }
   document.getElementById(
