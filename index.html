@@ -12,8 +12,6 @@
 </head>
 <body>
 <header>
-    <br/>
-
     <nav class="navbar navbar-dark bg-dark">
         <ul>
             <li><a class="btn btn-outline-success" type="button" href="#home">Home</a></li>
@@ -22,17 +20,14 @@
             <li><a class="btn btn-outline-success" type="button" href="#contact">Contact</a></li>
             <li><a class="btn btn-outline-success blogs" type="button"
                    href="https://blogs.mausamadhikari.com.np">Blogs</a></li>
+            <li><a class="g-ytsubscribe btn btn-outline-success" type="button" data-channelid="UCEFD_56D0WO41N-PJ3iW1fw" data-layout="full" data-count="hidden">Youtube</a></li>
 
         </ul>
     </nav>
-    <figure>
-        <img class="rounded rounded-sm float-right image"
-             src="https://avatars2.githubusercontent.com/u/31593792?v=4"
-             title="Mausam Adhikari"
-             alt="Photo of Mausam"
-        />
-    </figure>
+
+    
 </header>
+
 <main>
     <section>
         <div class="container" id="about">
@@ -42,15 +37,16 @@
         </div>
     </section>
 </main>
-<div id="portfolio">
-<div class="table-responsive ">
-    <table>
+<div id="portfolio row justify-content-center">
+<div class="table-responsive col-auto">
+    <table class="table w-auto">
         <thead>
         <tr class="table-info ">
             <h3>My Github Projets</h3>
             <th scope="col">ID</th>
             <th scope="col">Name</th>
             <th scope="col">URL</th>
+            <th scope="col">Language</th>
 
             <!--<th scope="col">Language</th> -->
         </tr>
@@ -66,6 +62,7 @@
     </div>
 </div>
 </div>
+
 <div class="myTweetsContainer">
     <a class="twitter-timeline" data-width="250" data-height="350" data-theme="dark"
        href="https://twitter.com/Mausamadhikari5?ref_src=twsrc%5Etfw">Tweets by Mausamadhikari5</a>
@@ -127,5 +124,6 @@
     </div>
 </footer>
 <script src="index.js"></script>
+<script src="https://apis.google.com/js/platform.js"></script>
 </body>
 </html>

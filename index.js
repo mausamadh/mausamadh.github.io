@@ -40,7 +40,7 @@ function fetchDataFromURL(url) {
 // }
 
 function updateUserInfo() {
-  document.getElementById("userGeetingsInfo").textContent = `Hi Guys, I am ${
+  document.getElementById("userGeetingsInfo").textContent = `Hi, I am ${
     userInfoResponse.name
   }`;
   document.getElementById("userBio").textContent = userInfoResponse.bio;
@@ -76,7 +76,7 @@ function createRepoTable() {
         repoListResponse[i].full_name
       }</a>` +
       "</td>";
-    //statusHTML += "<td>" + repoListResponse[i].language + "</td>";
+    statusHTML += "<td>" + repoListResponse[i].language + "</td>";
     statusHTML += "</tr>";
   }
   document.getElementById("repo_table").innerHTML = statusHTML;
