@@ -26,23 +26,9 @@ function fetchDataFromURL(url) {
   request.send();
 }
 
-// function fetchAndCreateTableForRepository(page) {
-//   var statusHTML = "";
-//   for (let i = 0; i < data.length; i++) {
-//     statusHTML += "<tr>";
-//     statusHTML += "<td>" + data[i].id + "</td>";
-//     statusHTML += "<td>" + data[i].name + "</td>";
-//     statusHTML += "<td>" + data[i].html_url + "</td>";
-//     statusHTML += "<td>" + data[i].language + "</td>";
-//     statusHTML += "</tr>";
-//   }
-//   document.getElementById("repo_table").innerHTML = statusHTML;
-// }
 
 function updateUserInfo() {
-  document.getElementById("userGeetingsInfo").textContent = `Hi, I am ${
-    userInfoResponse.name
-  }`;
+  document.getElementById("userGeetingsInfo").textContent = `Hi, I am ${userInfoResponse.name}`;
   document.getElementById("userBio").textContent = userInfoResponse.bio;
 }
 
@@ -57,29 +43,30 @@ function navRepoPageBtnClicked(page) {
     // Begin accessing JSON data here
     // var data = JSON.parse(this.response);
     repoListResponse = JSON.parse(this.response);
-    createRepoTable();
+    createCard();
 
     //console.log(userInfoResponse);
   };
   request.send();
 }
-
-function createRepoTable() {
-  var statusHTML = "";
-  for (let i = 0; i < repoListResponse.length; i++) {
-    statusHTML += "<tr>";
-    statusHTML += "<td>" + repoListResponse[i].id + "</td>";
-    statusHTML += "<td>" + repoListResponse[i].name + "</td>";
-    statusHTML +=
-      "<td>" +
-      `<a href='${repoListResponse[i].html_url}'>${
-        repoListResponse[i].full_name
-      }</a>` +
-      "</td>";
-    statusHTML += "<td>" + repoListResponse[i].language + "</td>";
-    statusHTML += "</tr>";
-  }
-  document.getElementById("repo_table").innerHTML = statusHTML;
+function createCard(){
+    var CardHTML ="";
+    for (let i = 0; i < repoListResponse.length; i++) {
+        CardHTML += "<div class="+"tile"+">";
+        CardHTML += `<a href="${repoListResponse[i].html_url}" target="_blank">`;
+        CardHTML += `<img src='https://images.unsplash.com/photo-1464054313797-e27fb58e90a9?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=996&q=80'/>`;
+        CardHTML += `<div class="text">`;
+        CardHTML += "<h1>"+repoListResponse[i].name+"</h1>";
+        CardHTML += `<h2 class="animate-text" id="cardinfo">${repoListResponse[i].full_name}</h2>`;
+        CardHTML += `<p class="animate-text" id="cardbio">${repoListResponse[i].description}</p>`;
+        CardHTML += `<div class="animate-text">`;
+        CardHTML += `<span></span><br>`;
+        CardHTML += `<span>${repoListResponse[i].language}</span><br>`;
+        CardHTML += `<span>${repoListResponse[i].created_at}</span>`;
+        CardHTML += `</div></div></a></div>`;
+    }
+    console.log(repoListResponse);
+    document.getElementById("cardBody").innerHTML = CardHTML;
 }
 
 function createButtonsForRepo() {
@@ -88,7 +75,7 @@ function createButtonsForRepo() {
   if (userInfoResponse.public_repos % per_page !== 0) repoDivisor++;
 
   for (let i = 1; i <= repoDivisor; i++) {
-    let button = `<button class="repoNavigationButton pagination item" id="${i}" onClick="navRepoPageBtnClicked(${i})">${i}</button>`;
+    let button = `<button class="repoNavigationButton" id="${i}" onClick="navRepoPageBtnClicked(${i})">${i}</button>`;
     createdButtons = createdButtons.concat(button);
   }
   document.getElementById(
