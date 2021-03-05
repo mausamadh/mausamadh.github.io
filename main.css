@@ -3,7 +3,7 @@ nav ul li{
   float: left;
   width: auto;
   height: auto;
-  padding: 10px 20px;
+  padding: 5px 5px;
   color: wheat;
 }
 body
@@ -17,9 +17,6 @@ header {
   background: rgba(120,250,100,0.6);
 }
 
-#protfolio{
-  background-image: url(http://wallpapershome.com/images/pages/pic_h/6487.jpg);
-}
 
 .contact{
   background-image: url(http://www.saar-hunsrueck-steig.de/cams/clients/shsteig/media/images_backgrounds_Bild_6.jpg);
@@ -31,7 +28,7 @@ header {
 .whiteTextWithShadow{
   padding-top: 37%;
   color: white;
-  text-shadow: 2px -2px grey; 
+  text-shadow: 2px -2px grey;
 }
 
 .target{
@@ -77,7 +74,7 @@ p {
   width: 10%;
   height: 10%;
   transition: 0.5s ease;
-  backface-visibility: hidden;
+  
 }
 .text {
   background-color: #4caf50;
@@ -108,12 +105,11 @@ p {
 }
 .wrap
 {
-  margin:50px auto 0 auto;
+  margin: 0px auto 0 auto;
   width:100%;
   display:flex;
   align-items:center;
-  max-width:fit-content(20em);
-  justify-content:space-around;
+
 }
 .tile
 {

@@ -6,7 +6,7 @@ var repoListResponse;
 
 
 
-var per_page = 4;
+var per_page = 5;
 function fetchDataFromURL(url) {
   //Create a request variable and assign a new XMLHttpRequest object to it.
   var request = new XMLHttpRequest();
@@ -55,9 +55,9 @@ function createCard(){
         CardHTML += "<div class="+"tile"+">";
         CardHTML += `<a href="${repoListResponse[i].html_url}" target="_blank">`;
         CardHTML += `<img src='https://images.unsplash.com/photo-1464054313797-e27fb58e90a9?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=996&q=80'/>`;
-        CardHTML += `<div class="text">`;
+        CardHTML += `<div class="text-justify">`;
         CardHTML += "<h1>"+repoListResponse[i].name+"</h1>";
-        CardHTML += `<h2 class="animate-text" id="cardinfo">${repoListResponse[i].full_name}</h2>`;
+        CardHTML += `<h2 class="animate-text" id="cardinfo">${repoListResponse[i].id}</h2>`;
         CardHTML += `<p class="animate-text" id="cardbio">${repoListResponse[i].description}</p>`;
         CardHTML += `<div class="animate-text">`;
         CardHTML += `<span></span><br>`;
