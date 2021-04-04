@@ -111,11 +111,51 @@ p {
   align-items:center;
 
 }
+/*.previousbutton
+{
+  margin: 0px auto 0 auto;
+  align-items:left;
+
+}
+.nextbutton
+{
+  margin: 0px auto 0 auto;
+  align-items:right;
+
+}
+.round {
+  border-radius: 50%;
+}
+*/
+
+.next-button{
+    margin: 0px auto 0 auto;
+    position: absolute;
+    top: 246px;
+    right: 0px;
+    height:380px;
+    display: table;
+    bottom: 0px;
+    line-height: initial;
+    vertical-align: middle;
+}
+
+.previous-button{
+    margin: 0px auto 0 auto;
+    position: absolute;
+    top: 246px;
+    left: 0px;
+    height:380px;
+    display: table;
+    bottom: 0px;
+    line-height: initial;
+    vertical-align: middle;
+}
 .tile
 {
   width:380px;
   height:380px;
-  margin:10px;
+  margin:5px;
   background-color:#99aeff;
   display:inline-block;
   background-size:cover;
