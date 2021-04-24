@@ -7,6 +7,7 @@ var repoListResponse;
 
 
 var per_page = 5;
+
 function fetchDataFromURL(url) {
   //Create a request variable and assign a new XMLHttpRequest object to it.
   var request = new XMLHttpRequest();
@@ -14,7 +15,7 @@ function fetchDataFromURL(url) {
   // Open a new connection, using the GET request on the URL endpoint
   request.open("GET", url, true);
   //console.log("test");
-  request.onload = function() {
+  request.onload = function () {
     // Begin accessing JSON data here
     // var data = JSON.parse(this.response);
     userInfoResponse = JSON.parse(this.response);
@@ -39,7 +40,7 @@ function navRepoPageBtnClicked(page) {
   // Open a new connection, using the GET request on the URL endpoint
   request.open("GET", url + `?page=${page}&per_page=${per_page}`, true);
   //console.log("test");
-  request.onload = function() {
+  request.onload = function () {
     // Begin accessing JSON data here
     // var data = JSON.parse(this.response);
     repoListResponse = JSON.parse(this.response);
@@ -52,45 +53,47 @@ function navRepoPageBtnClicked(page) {
 
 
 // this is start of prev and next button
-var i=1;
+var i = 1;
+
 function prev() {
 
-            // Start position
-            if (i == 1) {
+  // Start position
+  if (i == 1) {
 
-                // Add disabled attribute on
-                // prev button
-                document.getElementsByClassName(
-                        'prev').disabled = true;
+    // Add disabled attribute on
+    // prev button
+    document.getElementsByClassName(
+      'prev').disabled = true;
 
-                // Remove disabled attribute
-                // from next button
-                document.getElementsByClassName(
-                        'next').disabled = false;
-            } else {
-                i--;
-                return navRepoPageBtnClicked(i);
-            }
-        }
-        function next() {
+    // Remove disabled attribute
+    // from next button
+    document.getElementsByClassName(
+      'next').disabled = false;
+  } else {
+    i--;
+    return navRepoPageBtnClicked(i);
+  }
+}
 
-            // End position
-            if (i == 5) {
+function next() {
 
-                // Add disabled attribute on
-                // next button
-                document.getElementsByClassName(
-                        'next').disabled = true;
+  // End position
+  if (i == 5) {
 
-                // Remove disabled attribute
-                // from prev button
-                document.getElementsByClassName(
-                        'prev').disabled = false;
-            } else {
-                i++;
-                return navRepoPageBtnClicked(i);
-            }
-        }
+    // Add disabled attribute on
+    // next button
+    document.getElementsByClassName(
+      'next').disabled = true;
+
+    // Remove disabled attribute
+    // from prev button
+    document.getElementsByClassName(
+      'prev').disabled = false;
+  } else {
+    i++;
+    return navRepoPageBtnClicked(i);
+  }
+}
 
 // This is end of prev next button
 
@@ -98,24 +101,24 @@ function prev() {
 
 
 
-function createCard(){
-    var CardHTML ="";
-    for (let i = 0; i < repoListResponse.length; i++) {
-        CardHTML += "<div class="+"tile"+">";
-        CardHTML += `<a href="${repoListResponse[i].html_url}" target="_blank">`;
-        CardHTML += `<img src='https://images.unsplash.com/photo-1464054313797-e27fb58e90a9?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=996&q=80'/>`;
-        CardHTML += `<div class="text-justify">`;
-        CardHTML += "<h1>"+repoListResponse[i].name+"</h1>";
-        CardHTML += `<h2 class="animate-text" id="cardinfo">${repoListResponse[i].id}</h2>`;
-        CardHTML += `<p class="animate-text" id="cardbio">${repoListResponse[i].description}</p>`;
-        CardHTML += `<div class="animate-text">`;
-        CardHTML += `<span></span><br>`;
-        CardHTML += `<span>${repoListResponse[i].language}</span><br>`;
-        CardHTML += `<span>${repoListResponse[i].created_at}</span>`;
-        CardHTML += `</div></div></a></div>`;
-    }
-    console.log(repoListResponse);
-    document.getElementById("cardBody").innerHTML = CardHTML;
+function createCard() {
+  var CardHTML = "";
+  for (let i = 0; i < repoListResponse.length; i++) {
+    CardHTML += "<div class=" + "tile" + ">";
+    CardHTML += `<a href="${repoListResponse[i].html_url}" target="_blank">`;
+    CardHTML += `<img src='https://images.unsplash.com/photo-1464054313797-e27fb58e90a9?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=996&q=80'/>`;
+    CardHTML += `<div class="text-justify">`;
+    CardHTML += "<h1>" + repoListResponse[i].name + "</h1>";
+    CardHTML += `<h2 class="animate-text" id="cardinfo">${repoListResponse[i].id}</h2>`;
+    CardHTML += `<p class="animate-text" id="cardbio">${repoListResponse[i].description}</p>`;
+    CardHTML += `<div class="animate-text">`;
+    CardHTML += `<span></span><br>`;
+    CardHTML += `<span>${repoListResponse[i].language}</span><br>`;
+    CardHTML += `<span>${repoListResponse[i].created_at}</span>`;
+    CardHTML += `</div></div></a></div>`;
+  }
+  console.log(repoListResponse);
+  document.getElementById("cardBody").innerHTML = CardHTML;
 }
 
 /*function createButtonsForRepo() {
