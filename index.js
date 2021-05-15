@@ -1,5 +1,5 @@
-let url = "https://api.github.com/users/mausamadhikari/repos";
-let gitUserInfoUrl = "https://api.github.com/users/mausamadhikari";
+let url = "https://api.github.com/users/mausamadh/repos";
+let gitUserInfoUrl = "https://api.github.com/users/mausamadh";
 var userInfoResponse;
 var repoListResponse;
 
