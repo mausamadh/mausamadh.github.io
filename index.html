@@ -1,114 +1,969 @@
-<!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge=chrome" />
-  <title>Mausam Adhikari</title>
-  <meta name="viewport" content="width=device-width" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <title data-react-helmet="true">Mausam Adhikari&#x27;s Personal
+    Website</title>
+  <meta data-react-helmet="true" name="description"
+    content="This is a website made using FlowCV.">
+  <link data-react-helmet="true" rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;👋&lt;/text&gt;&lt;/svg&gt;">
+  <style>
+    @import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+  </style>
+  <style>
+    a,
+    abbr,
+    acronym,
+    address,
+    applet,
+    article,
+    aside,
+    audio,
+    b,
+    big,
+    blockquote,
+    body,
+    canvas,
+    caption,
+    center,
+    cite,
+    code,
+    dd,
+    del,
+    details,
+    dfn,
+    div,
+    dl,
+    dt,
+    em,
+    embed,
+    fieldset,
+    figcaption,
+    figure,
+    footer,
+    form,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    header,
+    hgroup,
+    html,
+    i,
+    iframe,
+    img,
+    ins,
+    kbd,
+    label,
+    legend,
+    li,
+    mark,
+    menu,
+    nav,
+    object,
+    ol,
+    output,
+    p,
+    pre,
+    q,
+    ruby,
+    s,
+    samp,
+    section,
+    small,
+    span,
+    strike,
+    strong,
+    sub,
+    summary,
+    sup,
+    table,
+    tbody,
+    td,
+    tfoot,
+    th,
+    thead,
+    time,
+    tr,
+    tt,
+    u,
+    ul,
+    var,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline
+    }
 
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block
+    }
+
+    body {
+      line-height: 1
+    }
+
+    ol,
+    ul {
+      list-style: none
+    }
+
+    blockquote,
+    q {
+      quotes: none
+    }
+
+    blockquote:after,
+    blockquote:before,
+    q:after,
+    q:before {
+      content: '';
+      content: none
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0
+    }
+
+    *,
+    :after,
+    :before {
+      box-sizing: border-box
+    }
+  </style>
+  <style>
+    *,
+    :after,
+    :before {
+      box-sizing: border-box
+    }
+
+    html {
+      font-synthesis: none;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-smooth: antialiased;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none !important
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      font-weight: 400;
+      font-display: swap;
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      color: #4f4f4f;
+      line-height: 1.6;
+      font-size: 1.4rem
+    }
+
+    button {
+      cursor: pointer;
+      padding: 0;
+      background-color: inherit
+    }
+
+    img {
+      width: 100%;
+      height: auto
+    }
+
+    a {
+      text-decoration: none
+    }
+
+    strong {
+      font-weight: 700
+    }
+
+    @media screen and (max-width:768px) {
+      html {
+        font-size: 59%
+      }
+    }
+
+    @media screen and (min-width:768px) {
+      html {
+        font-size: 62.5%
+      }
+    }
+
+    @media screen and (min-width:992px) {
+      html {
+        font-size: 62.5%
+      }
+    }
+  </style>
+  <style
+    data-styled="grhjJe  keIdEV birOZs eoryhU iFaRDL lGGiQ bOrPFB LzXbj hnZXkc BLHiD uPUBl elWflX hJrwEH kNNMu"
+    data-styled-version="4.4.1">
+    a,
+    abbr,
+    acronym,
+    address,
+    applet,
+    article,
+    aside,
+    audio,
+    b,
+    big,
+    blockquote,
+    body,
+    canvas,
+    caption,
+    center,
+    cite,
+    code,
+    dd,
+    del,
+    details,
+    dfn,
+    div,
+    dl,
+    dt,
+    em,
+    embed,
+    fieldset,
+    figcaption,
+    figure,
+    footer,
+    form,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    header,
+    hgroup,
+    html,
+    i,
+    iframe,
+    img,
+    ins,
+    kbd,
+    label,
+    legend,
+    li,
+    main,
+    mark,
+    menu,
+    nav,
+    object,
+    ol,
+    output,
+    p,
+    pre,
+    q,
+    ruby,
+    s,
+    samp,
+    section,
+    small,
+    span,
+    strike,
+    strong,
+    sub,
+    summary,
+    sup,
+    table,
+    tbody,
+    td,
+    tfoot,
+    th,
+    thead,
+    time,
+    tr,
+    tt,
+    u,
+    ul,
+    var,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline
+    }
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    main,
+    menu,
+    nav,
+    section {
+      display: block
+    }
+
+    [hidden] {
+      display: none
+    }
+
+    body {
+      line-height: 1
+    }
+
+    ol,
+    ul {
+      list-style: none
+    }
+
+    blockquote,
+    q {
+      quotes: none
+    }
+
+    blockquote:after,
+    blockquote:before,
+    q:after,
+    q:before {
+      content: '';
+      content: none
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0
+    }
+
+    html {
+      -webkit-scrollbar-width: none !important;
+      -moz-scrollbar-width: none !important;
+      -ms-scrollbar-width: none !important;
+      scrollbar-width: none !important;
+      box-sizing: border-box;
+      font-size: 59%
+    }
+
+    html::-webkit-scrollbar {
+      display: none
+    }
+
+    *,
+    :after,
+    :before {
+      box-sizing: border-box
+    }
+
+    body {
+      min-height: 100vh;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      position: relative;
+      font-synthesis: none;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 400;
+      font-display: swap
+    }
+
+    button {
+      cursor: pointer;
+      padding: 0;
+      background-color: inherit
+    }
+
+    img {
+      width: 100%;
+      height: auto
+    }
+
+    a {
+      -webkit-text-decoration: none;
+      text-decoration: none
+    }
+
+    strong {
+      font-weight: 700
+    }
+
+    .LzXbj {
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center
+    }
+
+    .BLHiD {
+      width: 4.6rem;
+      height: 4.6rem;
+      border: 1px solid;
+      margin: .66rem;
+      background-color: none;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      cursor: pointer;
+      border-radius: 4px;
+      -webkit-text-decoration: none;
+      text-decoration: none;
+      color: inherit;
+      -webkit-transition: .3s;
+      transition: .3s
+    }
+
+    .BLHiD svg {
+      height: 2rem;
+      fill: #fff
+    }
+
+    .BLHiD:hover {
+      opacity: .6
+    }
+
+    .eoryhU {
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-bottom: 3rem;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center
+    }
+
+    @media screen and (min-width:992px) {
+      .eoryhU {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column
+      }
+    }
+
+    .eoryhU img {
+      -webkit-transition: width .3s;
+      transition: width .3s;
+      max-width: 14.4rem;
+      min-width: 0;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center
+    }
+
+    @media screen and (min-width:992px) {
+      .eoryhU img {
+        max-width: 16rem
+      }
+    }
+
+    .eoryhU>:first-child {
+      margin-top: 0 !important;
+      margin-left: 0 !important
+    }
+
+    .eoryhU>:last-child {
+      margin-bottom: 0 !important;
+      margin-right: 0 !important
+    }
+
+    .lGGiQ {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center
+    }
+
+    .iFaRDL {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column
+    }
+
+    .iFaRDL>:first-child {
+      margin-top: 0 !important;
+      margin-left: 0 !important
+    }
+
+    .iFaRDL>:last-child {
+      margin-bottom: 0 !important;
+      margin-right: 0 !important
+    }
+
+    .elWflX {
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center
+    }
+
+    .hJrwEH {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      gap: .6rem;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 1.8rem;
+      cursor: pointer;
+      padding: 1.1rem 1.6rem 1rem 1.6rem;
+      background-color: #fff;
+      color: #212121;
+      -webkit-transition: .3s;
+      transition: .3s
+    }
+
+    @media screen and (min-width:992px) {
+      .hJrwEH {
+        font-size: 2rem
+      }
+    }
+
+    .hJrwEH:hover {
+      box-shadow: 1rem 1rem 3.15rem 0 rgba(0, 0, 0, .25)
+    }
+
+    .kNNMu {
+      padding: 0 .6rem 0 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center
+    }
+
+    .kNNMu svg {
+      height: 1.8rem;
+      margin: 0;
+      padding: 0;
+      fill: #212121
+    }
+
+    @media screen and (min-width:992px) {
+      .kNNMu svg {
+        height: 2rem
+      }
+    }
+
+    .keIdEV {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 95%;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      box-shadow: none;
+      border-radius: .8rem;
+      -webkit-animation: none;
+      animation: none;
+      -webkit-transition: width .3s;
+      transition: width .3s
+    }
+
+    @media screen and (min-width:992px) {
+      .keIdEV {
+        width: auto;
+        width: auto;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column
+      }
+    }
+
+    @media screen and (min-width:1200px) {
+      .keIdEV {
+        max-width: 60vw
+      }
+    }
+
+    .birOZs {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 100%;
+      border-radius: .8rem;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background: 0 0;
+      padding: 3.5999999999999996rem;
+      padding: 1.0499999999999998rem
+    }
+
+    @-webkit-keyframes fadeIn {
+      0% {
+        opacity: 0
+      }
+
+      100% {
+        opacity: 1
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0
+      }
+
+      100% {
+        opacity: 1
+      }
+    }
+
+    @media screen and (min-width:992px) {
+      .birOZs {
+        width: 100%;
+        border-radius: .8rem
+      }
+    }
+
+    @media screen and (min-width:992px) {
+      .birOZs {
+        padding: 6rem
+      }
+    }
+
+    .birOZs>:first-child {
+      margin-top: 0 !important;
+      margin-left: 0 !important
+    }
+
+    .birOZs>:last-child {
+      margin-bottom: 0 !important;
+      margin-right: 0 !important
+    }
+
+    .uPUBl>:first-child {
+      margin-top: 0 !important;
+      margin-left: 0 !important
+    }
+
+    .uPUBl>:last-child {
+      margin-bottom: 0 !important;
+      margin-right: 0 !important
+    }
+
+    .grhjJe {
+      padding: 5% 2.5%;
+      width: 100vw;
+      min-height: 100vh;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background-image: linear-gradient(69.9deg, #4c4f6a 3.2%, #767ca3 97.6%);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: auto;
+      color: rgba(255, 255, 255, .9);
+      font-family: Barlow, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 400;
+      word-break: normal;
+      word-wrap: normal;
+      -webkit-hyphens: none;
+      -moz-hyphens: none;
+      -ms-hyphens: none;
+      hyphens: none;
+      font-kerning: normal;
+      -moz-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+      -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+      -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+      font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+      font-kerning: normal
+    }
+
+    @media screen and (min-width:992px) {
+      .grhjJe {
+        padding: 2.5%
+      }
+    }
+
+    @media screen and (min-width:768px) {
+      .grhjJe {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center
+      }
+    }
+
+    .grhjJe * {
+      line-height: 2.7rem
+    }
+
+    @media screen and (min-width:992px) {
+      .grhjJe * {
+        line-height: 3rem
+      }
+    }
+
+    .grhjJe p {
+      font-size: 1.8rem;
+      line-height: 2.7rem
+    }
+
+    @media screen and (min-width:992px) {
+      .grhjJe p {
+        font-size: 2rem;
+        line-height: 3rem;
+        max-width: 60rem
+      }
+    }
+
+    .grhjJe li {
+      font-size: 1.8rem
+    }
+
+    @media screen and (min-width:992px) {
+      .grhjJe li {
+        font-size: 2rem;
+        max-width: 40vw
+      }
+    }
+
+    .grhjJe h1,
+    .grhjJe h2 {
+      text-rendering: optimizeLegibility;
+      font-family: inherit
+    }
+
+    @media screen and (min-width:992px) {
+
+      .grhjJe h1,
+      .grhjJe h2 {
+        max-width: 40vw
+      }
+    }
+
+    .grhjJe h1 {
+      font-size: 4.05rem;
+      margin-bottom: 1.5rem;
+      line-height: 4.455rem;
+      font-weight: 700;
+      -webkit-letter-spacing: -.04rem;
+      -moz-letter-spacing: -.04rem;
+      -ms-letter-spacing: -.04rem;
+      letter-spacing: -.04rem
+    }
+
+    @media screen and (min-width:992px) {
+      .grhjJe h1 {
+        font-size: 4.5rem;
+        margin-bottom: 1.875rem;
+        line-height: 4.5rem
+      }
+    }
+
+    .grhjJe h2 {
+      font-size: 2.7rem;
+      margin-bottom: 1.5rem;
+      line-height: 3.105rem
+    }
+
+    @media screen and (min-width:992px) {
+      .grhjJe h2 {
+        font-size: 3rem;
+        margin-bottom: 1.875rem;
+        line-height: 3.4499999999999997rem
+      }
+    }
+  </style>
+  <script>
+    "use strict";
+
+    function pr() {
+      var t, e, n, c, o, a, d, i, p, s, r, w, P, l, u, f, h, g, m, y,
+        b, v, E, M, B, L, C = document.getElementById("ppc"),
+        I = document.getElementById("pp");
+
+      function O(t, e, n, c) {
+        var o = t / 2;
+        return {
+          wPct: e = 1 + ((e = 1 + (e - 1) * (1 - t)) - 1) * (1 - o),
+          topPct: n -= o,
+          leftPct: c *= 1 - (t + o)
+        }
+      }
+      C && I && (e = (t = C.getBoundingClientRect()).width, n = t
+        .height, o = (c = JSON.parse(C.dataset.dim)).a, a = c.b, d =
+        c.c, i = c.d, p = o / a, s = e / n, b = o / (r = o * c.e),
+        l = (w = o * i) / r, l = (w - (s - 1) * r / 2) / (P = r *
+          s), u = u = a * d / (a * c.f), h = (f = e * (b = o / P)) /
+        p, g = n * Math.abs(u), m = e * l, b <= 1 && (y = 1 - b,
+          u *= (b = 1) + y * s, l = 0), (v = f - m) < e && (b += (
+          E = e - v) / f, l -= E / e / 2), B = (M = h - n - g) / n,
+        s < 1 && 1 < p && 0 < M && (e * (L = O(B, b, u, l)).wPct /
+          p - n * Math.abs(L.topPct) < n && !(n < e * (L = O(B / 4,
+            b, u, l)).wPct / p - n * Math.abs(L.topPct)) || (b = L
+            .wPct, u = L.topPct, l = L.leftPct)), I.style.width = ""
+        .concat(100 * b, "%"), I.style.left = "-".concat(100 * l,
+          "%"), I.style.top = "-".concat(100 * u, "%"))
+    }
+    window.addEventListener("DOMContentLoaded", function () {
+      pr()
+    }), window.addEventListener("resize", function () {
+      pr()
+    })
+  </script>
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-dark bg-dark">
-      <ul>
-        <li><a class="btn btn-outline-success" type="button" href="#home">Home</a></li>
-        <li><a class="btn btn-outline-success" type="button" href="#about">About me</a></li>
-        <li><a class="btn btn-outline-success" type="button" href="#home">Projects</a></li>
-        <li><a class="btn btn-outline-success" type="button" href="#contact">Contact</a></li>
-        <li><a class="btn btn-outline-success blogs" type="button" href="https://blogs.mausamadhikari.com.np">Blogs</a>
-        </li>
-        <li><a class="g-ytsubscribe btn btn-outline-success" type="button" data-channelid="UCEFD_56D0WO41N-PJ3iW1fw"
-            data-layout="full" data-count="hidden">Youtube</a></li>
-      </ul>
-    </nav>
-
-
-  </header>
-
-  <main>
-    <section>
-      <div class="container" id="about">
-        <h1 class="alert alert-info" id="userGeetingsInfo">Hi guys, I'm Mausam.</h1>
-
-        <p class="alert alert-info" id="userBio">A guy who doesn't know HTML CSS.</p>
-      </div>
-    </section>
-  </main>
-  <div class="wrap" id="cardBody">
-
-  </div>
-  <div class="wrap">
-    <button class="previous-button repoNavigationButton round" onclick="prev()">
-      &#8249;
-    </button>
-
-    <button class="next-button repoNavigationButton round" onclick="next()">
-      &#8250;
-    </button>
-  </div>
-
-
-  <div class="myTweetsContainer">
-    <a class="twitter-timeline" data-width="250" data-height="350" data-theme="dark"
-      href="https://twitter.com/Mausamadh?ref_src=twsrc%5Etfw">Tweets by Mausamadhikari5</a>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-  </div>
-
-  <footer>
-    <div class="contact">
-      <div class="row rowContact">
-        <div class="col-md-3 col-md-offset-1">
-          <h1 class=" whiteTextWithShadow">Contact</h1>
+  <div class="sc-hSdWYo grhjJe">
+    <div class="sc-kEYyzF keIdEV">
+      <div class="sc-kkGfuU birOZs">
+        <div class="sc-jTzLTM eoryhU">
+          <div class="sc-jzJRlG iFaRDL">
+            <div class="sc-fjdhpX lGGiQ">
+              <h1 class="sc-bZQynM bOrPFB">Mausam Adhikari</h1>
+            </div>
+            <div class="sc-iwsKbI LzXbj">
+              <div class="sc-gqjmRU hnZXkc"><a
+                  href="https://www.mausamadhikari.com.np/"
+                  target="_blank" class="sc-VigVT BLHiD"><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 36 36">
+                    <title>Website icon</title>
+                    <path
+                      d="M29 12.36L3.88 3a1 1 0 00-1.29 1.28L12 29.44a1 1 0 001.89-.05l2.69-8.75 9.12 8.9a1 1 0 001.41 0l2.35-2.35a1 1 0 000-1.41l-9.09-8.86L29 14.25a1 1 0 000-1.89z">
+                    </path>
+                    <path fill="none" d="M0 0h36v36H0z"></path>
+                  </svg></a></div>
+              <div class="sc-gqjmRU hnZXkc"><a
+                  href="mailto:mausamadhikari20@gmail.com"
+                  target="_blank" class="sc-VigVT BLHiD"><svg
+                    viewBox="0 0 48 48" fill="none">
+                    <path
+                      d="M46.652 1.348L45.432.084 1.302 14.12l-.466 3.484L14.33 28.31 40.746 7.254 19.69 33.67l10.706 13.494 3.484-.466 14.036-44.13-1.264-1.22z">
+                    </path>
+                  </svg></a></div>
+              <div class="sc-gqjmRU hnZXkc"><a
+                  href="https://www.linkedin.com/in/mausamadhikari20/"
+                  target="_blank" class="sc-VigVT BLHiD"><svg
+                    viewBox="0 0 24 24" fill="none">
+                    <title>Linkedin icon</title>
+                    <path
+                      d="M7.2 20.8h-4v-12h4v12zM5.202 7.2a2 2 0 11-.004-4 2 2 0 01.004 4zM21.6 20.8h-3.845v-5.84c0-1.393-.027-3.183-2-3.183-2.002 0-2.31 1.516-2.31 3.082V20.8H9.6V8.791h3.69v1.64h.054c.512-.944 1.768-1.939 3.64-1.939 3.896 0 4.616 2.488 4.616 5.722V20.8z">
+                    </path>
+                  </svg></a></div>
+              <div class="sc-gqjmRU hnZXkc"><a
+                  href="https://github.com/mausamadh" target="_blank"
+                  class="sc-VigVT BLHiD"><svg role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>GitHub icon</title>
+                    <path
+                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
+                    </path>
+                  </svg></a></div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <a class="target" href="https://dev.to/mausamadhikari5" target="_blank">
-            <i class="fa-free-code-camp "></i> Dev
-          </a>
-        </div>
-      </div>
-      <div class="row ">
-        <div class="col-md-12">
-          <a class="target" href="https://www.linkedin.com/in/mausamadhikari20/" target="_blank">
-            <i class="fa-linkedin"></i> Linkedin
-          </a>
-        </div>
-      </div>
-      <div class="row ">
-        <div class="col-md-12">
-          <a class="target" href="https://github.com/Mausamadh" target="_blank">
-            <i class="fa-github"></i> Github
-          </a>
-        </div>
-      </div>
-      <div class="row ">
-        <div class="col-md-12">
-          <a class="target" href="https://twitter.com/mausamadh" target="_blank"><i class="fa-twitter"> Twitter</i>
-          </a>
+        <div class="sc-iAyFgw uPUBl">
+          <div class="sc-cSHVUG elWflX .cta-button"><a
+              href="mailto:mausamadhikari20@gmail.com"
+              class="sc-kAzzGY hJrwEH">
+              <div class="sc-chPdSV kNNMu"><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M22 2L2 9.271l5.438 5.44L18 6 9.29 16.563 14.728 22 22 2z">
+                  </path>
+                </svg></div><span>Contact me</span>
+            </a></div>
         </div>
       </div>
     </div>
-    </div>
-    <br />
-
-    <p class="w-50 p-3">&copy; 2020 - Mausam Adhikari - All rights reserved</p>
-    <div class="footerContainer">
-      <p class="w-50 p-3">
-        Hosted On
-        <a href="https://github.com/" target="_blank" rel="nofollow" title="Open Github">GitHub</a>
-        with ❤️
-      </p>
-    </div>
-  </footer>
-  <script src="index.js"></script>
-  <script src="https://apis.google.com/js/platform.js"></script>
+  </div>
+  <script data-cfasync="false"
+    src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
+  </script>
 </body>
 
 </html>
