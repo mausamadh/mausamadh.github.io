@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width,initial-scale=1,shrink-to-fit=no">
-    <title data-react-helmet="true">Mausam Adhikari</title>
+    <title data-react-helmet="true">Data Scientist | Mausam Adhikari</title>
     <link data-react-helmet="true" rel="icon" type="image/svg+xml"
         href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;👋&lt;/text&gt;&lt;/svg&gt;">
     <style>
@@ -955,6 +955,300 @@
             }
         }
     </style>
+    <style>
+        :root {
+            --ink: #f7f4ed;
+            --muted: rgba(247, 244, 237, .68);
+            --accent: #f2b880;
+            --line: rgba(247, 244, 237, .16);
+            --panel: rgba(20, 27, 27, .72)
+        }
+
+        html,
+        body {
+            background: #101918
+        }
+
+        body {
+            font-family: Jost, Georgia, serif;
+            color: var(--ink)
+        }
+
+        .uzGGk {
+            position: relative;
+            isolation: isolate;
+            padding: 2rem 1.5rem;
+            background-image: url(https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEwMTg4M30);
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+            transition: color .55s ease
+        }
+
+        .uzGGk::after {
+            content: '';
+            position: absolute;
+            z-index: -2;
+            inset: 0;
+            background: rgba(9, 20, 19, .84)
+        }
+
+        .theme-wash {
+            position: absolute;
+            z-index: -1;
+            inset: 0;
+            background: rgba(244, 239, 228, .88);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .55s cubic-bezier(.22, 1, .36, 1)
+        }
+
+        .light-theme {
+            --ink: #1c2926;
+            --muted: rgba(28, 41, 38, .68);
+            --accent: #b76538;
+            --line: rgba(28, 41, 38, .16);
+            --panel: rgba(255, 252, 245, .76)
+        }
+
+        .uzGGk.light-theme::before {
+            opacity: .28
+        }
+
+        .uzGGk.light-theme .theme-wash {
+            opacity: 1
+        }
+
+        .light-theme .eWlkVt {
+            color: #fffaf2
+        }
+
+        .light-theme .eWlkVt:hover {
+            background: #c9794c;
+            box-shadow: 0 1rem 2.5rem rgba(183, 101, 56, .2)
+        }
+
+        .theme-toggle {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            z-index: 1;
+            padding: .65rem 1rem;
+            border: 1px solid var(--line);
+            border-radius: 99rem;
+            background: transparent;
+            color: var(--muted);
+            font: inherit;
+            font-size: 1.15rem;
+            letter-spacing: .06em;
+            line-height: 1.4;
+            text-transform: uppercase;
+            transition: .25s ease
+        }
+
+        .theme-toggle:hover,
+        .theme-toggle:focus-visible {
+            border-color: var(--accent);
+            color: var(--accent);
+            outline: none
+        }
+
+        .uzGGk::before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            inset: 0;
+            opacity: .22;
+            background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+            background-size: 4rem 4rem;
+            mask-image: linear-gradient(to bottom, black, transparent 80%)
+        }
+
+        .keIdEV {
+            position: relative;
+            z-index: 1;
+            width: min(100%, 68rem);
+            margin: auto;
+            animation: reveal .8s ease both
+        }
+
+        .birOZs {
+            position: relative;
+            align-items: stretch;
+            padding: clamp(2rem, 6vw, 6.5rem);
+            border: 1px solid var(--line);
+            border-radius: 1.2rem;
+            background: var(--panel);
+            box-shadow: 0 2rem 6rem rgba(0, 0, 0, .28);
+            backdrop-filter: blur(1rem);
+            transition: background-color .55s ease, border-color .55s ease, box-shadow .55s ease
+        }
+
+        .clxFDA {
+            align-items: flex-start;
+            margin-bottom: 3.2rem;
+            text-align: left
+        }
+
+        .lGGiQ {
+            align-items: flex-start
+        }
+
+        .bOrPFB {
+            max-width: 7ch;
+            color: var(--ink);
+            font-size: clamp(4.8rem, 11vw, 8.8rem);
+            letter-spacing: -.04em;
+            line-height: .95 !important;
+            transition: color .55s ease
+        }
+
+        .bOrPFB::before {
+            content: 'Hello, I am';
+            display: block;
+            margin-bottom: 1.4rem;
+            color: var(--accent);
+            font-size: 1.25rem;
+            font-weight: 400;
+            letter-spacing: .18em;
+            line-height: 1;
+            text-transform: uppercase
+        }
+
+        .jvzENE {
+            margin-top: 2.2rem;
+            color: var(--muted);
+            font-size: clamp(1.8rem, 3vw, 2.4rem);
+            letter-spacing: .04em;
+            line-height: 1.3 !important;
+            transition: color .55s ease
+        }
+
+        .hero-copy {
+            max-width: 42rem;
+            margin-top: 1.6rem;
+            color: var(--muted);
+            font-size: 1.65rem;
+            line-height: 1.6 !important;
+            transition: color .55s ease
+        }
+
+        .focus-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .8rem;
+            margin-top: 2rem
+        }
+
+        .focus-list span {
+            padding: .45rem .9rem;
+            border: 1px solid var(--line);
+            border-radius: 99rem;
+            color: var(--muted);
+            font-size: 1.15rem;
+            letter-spacing: .05em;
+            line-height: 1.4 !important;
+            transition: color .55s ease, border-color .55s ease
+        }
+
+        .kbWcBN {
+            justify-content: flex-start;
+            margin: 2rem 0 2.4rem
+        }
+
+        .bCHnJU {
+            width: 4rem;
+            border-color: var(--accent)
+        }
+
+        .LzXbj {
+            justify-content: flex-start;
+            gap: .35rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--line)
+        }
+
+        .EjwXJ {
+            width: 4.3rem;
+            height: 4.3rem;
+            border: 1px solid transparent;
+            border-radius: 50%;
+            color: var(--muted)
+        }
+
+        .EjwXJ svg {
+            fill: currentColor
+        }
+
+        .EjwXJ:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            opacity: 1;
+            transform: translateY(-.3rem)
+        }
+
+        .elWflX {
+            justify-content: flex-start;
+            padding-top: 2rem;
+            border-top: 1px solid var(--line)
+        }
+
+        .eWlkVt {
+            align-items: center;
+            padding: 1.2rem 1.8rem;
+            border: 1px solid var(--accent);
+            border-radius: 99rem;
+            background: var(--accent);
+            color: #1a2421;
+            font-size: 1.5rem;
+            letter-spacing: .04em;
+            text-transform: uppercase
+        }
+
+        .eWlkVt:hover {
+            background: #ffd0a1;
+            box-shadow: 0 1rem 2.5rem rgba(242, 184, 128, .2)
+        }
+
+        @keyframes reveal {
+            from { opacity: 0; transform: translateY(1.5rem) }
+            to { opacity: 1; transform: translateY(0) }
+        }
+
+        @media screen and (max-width: 600px) {
+            .uzGGk {
+                min-height: 100svh;
+                padding: 1rem
+            }
+
+            .birOZs {
+                min-height: calc(100svh - 2rem);
+                justify-content: center
+            }
+
+            .theme-toggle {
+                top: 1.5rem;
+                right: 1.5rem
+            }
+
+            .clxFDA {
+                margin-bottom: 2.5rem
+            }
+
+            .bOrPFB {
+                font-size: clamp(4.3rem, 17vw, 6.5rem)
+            }
+
+            .hero-copy {
+                font-size: 1.5rem
+            }
+
+            .EjwXJ {
+                width: 3.8rem;
+                height: 3.8rem
+            }
+        }
+    </style>
     <script>
         "use strict";
 
@@ -997,21 +1291,45 @@
         }), window.addEventListener("resize", function () {
             pr()
         })
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var page = document.querySelector(".uzGGk");
+            var toggle = document.querySelector(".theme-toggle");
+            var savedTheme = window.localStorage.getItem("landing-theme");
+
+            function updateTheme(isLight) {
+                page.classList.toggle("light-theme", isLight);
+                toggle.textContent = isLight ? "Dark mode" : "Light mode";
+                toggle.setAttribute("aria-pressed", isLight);
+                window.localStorage.setItem("landing-theme", isLight ? "light" : "dark");
+            }
+
+            updateTheme(savedTheme === "light");
+            toggle.addEventListener("click", function () {
+                updateTheme(!page.classList.contains("light-theme"));
+            });
+        })
     </script>
 </head>
 
 <body>
     <div class="sc-hSdWYo uzGGk">
+        <div class="theme-wash" aria-hidden="true"></div>
         <div class="sc-kEYyzF keIdEV">
             <div class="sc-kkGfuU birOZs">
+                <button class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">Light mode</button>
                 <div class="sc-jTzLTM clxFDA">
                     <div class="sc-jzJRlG iFaRDL">
                         <div class="sc-fjdhpX lGGiQ">
                             <h1 class="sc-bZQynM bOrPFB">Mausam
                                 Adhikari</h1>
-                            <h2 class="sc-EHOje jvzENE">Data /
-                                Software
-                                Engineer</h2>
+                            <h2 class="sc-EHOje jvzENE">Data Scientist</h2>
+                            <p class="hero-copy">I turn complex data into reliable products, useful insights, and intelligent systems.</p>
+                            <div class="focus-list" aria-label="Areas of focus">
+                                <span>Machine Learning</span>
+                                <span>Data Engineering</span>
+                                <span>Python & SQL</span>
+                            </div>
                             <div class="sc-bxivhb kbWcBN">
                                 <div class="sc-ifAKCX bCHnJU"></div>
                             </div>
@@ -1020,7 +1338,7 @@
                             <div class="sc-gqjmRU hnZXkc"><a
                                     href="https://blogs.mausamadhikari.com.np/"
                                     target="_blank"
-                                    class="sc-VigVT EjwXJ"><svg
+                                    class="sc-VigVT EjwXJ" aria-label="Blog" title="Blog"><svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 36 36">
                                         <title>Blogs</title>
@@ -1031,18 +1349,9 @@
                                             d="M0 0h36v36H0z"></path>
                                     </svg></a></div>
                             <div class="sc-gqjmRU hnZXkc"><a
-                                    href="portfolio/" target="_blank"
-                                    class="sc-VigVT EjwXJ"><svg
-                                        viewBox="0 0 48 48"
-                                        fill="none">
-                                        <path
-                                            d="M46.652 1.348L45.432.084 1.302 14.12l-.466 3.484L14.33 28.31 40.746 7.254 19.69 33.67l10.706 13.494 3.484-.466 14.036-44.13-1.264-1.22z">
-                                        </path>
-                                    </svg></a></div>
-                            <div class="sc-gqjmRU hnZXkc"><a
                                     href="https://www.linkedin.com/in/mausamadh/"
                                     target="_blank"
-                                    class="sc-VigVT EjwXJ"><svg
+                                    class="sc-VigVT EjwXJ" aria-label="LinkedIn" title="LinkedIn"><svg
                                         viewBox="0 0 24 24"
                                         fill="none">
                                         <title>Linkedin</title>
@@ -1053,7 +1362,7 @@
                             <div class="sc-gqjmRU hnZXkc"><a
                                     href="https://github.com/mausamadh"
                                     target="_blank"
-                                    class="sc-VigVT EjwXJ"><svg
+                                    class="sc-VigVT EjwXJ" aria-label="GitHub" title="GitHub"><svg
                                         role="img" viewBox="0 0 24 24"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <title>GitHub</title>
@@ -1064,7 +1373,7 @@
                             <div class="sc-gqjmRU hnZXkc"><a
                                     href="https://www.hackerrank.com/mausamadhikari20"
                                     target="_blank"
-                                    class="sc-VigVT EjwXJ"><svg
+                                    class="sc-VigVT EjwXJ" aria-label="HackerRank" title="HackerRank"><svg
                                         viewBox="0 0 24 24">
                                         <title>HackerRank</title>
                                         <path
@@ -1074,7 +1383,7 @@
                             <div class="sc-gqjmRU hnZXkc"><a
                                     href="https://mausamadh.medium.com"
                                     target="_blank"
-                                    class="sc-VigVT EjwXJ"><svg
+                                    class="sc-VigVT EjwXJ" aria-label="Medium" title="Medium"><svg
                                         viewBox="0 0 24 24"
                                         fill="none">
                                         <title>Medium</title>
@@ -1085,7 +1394,7 @@
                             <div class="sc-gqjmRU hnZXkc"><a
                                     href="https://www.youtube.com/channel/UCEFD_56D0WO41N-PJ3iW1fw?sub_confirmation=1"
                                     target="_blank"
-                                    class="sc-VigVT EjwXJ"><svg
+                                    class="sc-VigVT EjwXJ" aria-label="YouTube" title="YouTube"><svg
                                         viewBox="0 0 24 24">
                                         <title>YouTube</title>
                                         <path
@@ -1095,7 +1404,7 @@
                             <div class="sc-gqjmRU hnZXkc"><a
                                     href="https://www.quora.com/profile/Mausam-Adhikari-4"
                                     target="_blank"
-                                    class="sc-VigVT EjwXJ"><svg
+                                    class="sc-VigVT EjwXJ" aria-label="Quora" title="Quora"><svg
                                         role="img" viewBox="0 0 24 24"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <title>Quora</title>
@@ -1106,23 +1415,12 @@
                             <div class="sc-gqjmRU hnZXkc"><a
                                     href="https://www.upwork.com/freelancers/~012d81698134a61176"
                                     target="_blank"
-                                    class="sc-VigVT EjwXJ"><svg
+                                    class="sc-VigVT EjwXJ" aria-label="Upwork" title="Upwork"><svg
                                         role="img" viewBox="0 0 24 24"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <title>Upwork</title>
                                         <path
                                             d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.548-1.405-.002-2.543-1.143-2.545-2.548V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z">
-                                        </path>
-                                    </svg></a></div>
-                            <div class="sc-gqjmRU hnZXkc"><a
-                                    href="https://open.spotify.com/user/3157m5yejwreu37ttv3mwxjm2lse"
-                                    target="_blank"
-                                    class="sc-VigVT EjwXJ"><svg
-                                        role="img" viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <title>Spotify</title>
-                                        <path
-                                            d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z">
                                         </path>
                                     </svg></a></div>
                         </div>
