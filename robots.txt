@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
+Disallow: /bill_splitter/
+Disallow: /data_visualization/
+Disallow: /prabin/
+Disallow: /landingpage/
+Disallow: /dynamodb-AWS-flask/
+Disallow: /learning-plan/
 
 Sitemap: https://www.mausamadhikari.com.np/sitemap.xml
